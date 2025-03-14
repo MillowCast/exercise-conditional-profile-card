@@ -40,7 +40,7 @@ function render(variables = {}) {
           <h3>${variables.city ? variables.city : "City"},${
     variables.country ? variables.country : "Country"
   }</h3>
-          <ul ${variables.socialMediaPosition} class="position-left">
+          <ul class=${variables.socialMediaPosition} >
             <li><a href="https://twitter.com/4geeksacademy"><i class="fab fa-twitter" t></i></a></li>
             <li><a href="https://github.com/4geeksacademy"><i class="fab fa-github"></i></a></li>
             <li><a href="https://linkedin.com/school/4geeksacademy"><i class="fab fa-linkedin"></i></a></li>
@@ -49,7 +49,6 @@ function render(variables = {}) {
         </div>
     `;
 }
-
 /**
  * Don't change any of the lines below, here is where we do the logic for the dropdowns
  */
